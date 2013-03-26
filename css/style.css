@@ -1,0 +1,107 @@
+body {
+	padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+#plate {
+	table-layout: fixed;
+}
+.grid-row:hover {
+	background-color: paleturquoise!important;
+	cursor: text;
+}
+.grid-row-header {
+	font-weight: bold;
+	text-align: center!important;
+	vertical-align: middle!important;
+}
+.grid-header {
+	text-align: center!important;
+}
+.noborder {
+	background-color:#fff!important;
+	border: 0px solid!important;
+	height:2em!important;
+	width:100%!important;
+	outline: 0; -webkit-box-shadow: none !important; 
+	-moz-box-shadow: none !important; 
+	box-shadow: none !important;
+}
+.noborder:focus {
+	border: 1px solid!important;
+	border-color: paleturquoise!important;
+}
+span.grid-align-top-left {
+	font-size: 1ex;
+	float: left;
+	margin-left: -1ex;
+	margin-top: -1.4ex;
+	font-size: 1.4ex;
+	padding-right: 1ex;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 0px;
+}
+.input-title {
+	font-size: 1.2em!important;
+	height:2em!important;
+	font-weight: bold;
+	line-height: 2!important;
+}
+.input-cell {
+	font-size: 1.2em!important;
+	margin: 0px!important;
+}
+.help {
+	cursor: help;
+}
+#minfo {
+	cursor: pointer;
+}
+#madefor {
+	text-align: center;
+	margin-top: 5em;
+}
+
+/* Print
+-------------------------------------------------- */
+
+@media print {
+	.noprint,
+	.badge,
+	.removePrint,
+	input.headerinput[value=""],
+	.footer
+	{
+		display: none;
+	}
+	table, table * {
+		background-color: #fff!important;
+		border-collapse: collapse!important;
+	}
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10em;
+  border-top: 1px solid #ddd;
+  background-color: #eee;
+}
+.footer p {
+  margin-bottom: 1ex;
+  color: #777;
+}
+.footer-links {
+  margin: 10px 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 15px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
